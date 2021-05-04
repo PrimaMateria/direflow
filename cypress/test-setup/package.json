@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@material-ui/core": "^4.9.7",
-    "direflow-component": "../../packages/direflow-component",
-    "direflow-scripts": "../../packages/direflow-scripts",
+    "@mbenko/direflow-component": "../../packages/direflow-component",
+    "@mbenko/direflow-scripts": "../../packages/direflow-scripts",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.1",

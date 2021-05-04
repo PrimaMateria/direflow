@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { EventContext, Styled } from 'direflow-component';
+import { EventContext, Styled } from '@mbenko/direflow-component';
 import styles from './App.css';
 
 const App = (props) => {

@@ -1,4 +1,4 @@
-const { webpackConfig } = require('direflow-scripts');
+const { webpackConfig } = require('@mbenko/direflow-scripts');
 
 /**
  * Webpack configuration for Direflow Component

@@ -1,7 +1,7 @@
 {
-  "name": "direflow-cli",
-  "version": "3.5.6",
-  "description": "Official CLI for Direflow",
+  "name": "@mbenko/direflow-cli",
+  "version": "3.5.7",
+  "description": "Temporal patched version meant for testing",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
