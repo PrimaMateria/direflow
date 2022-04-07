@@ -39,8 +39,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-scripts": "3.4.1",
-    "direflow-component": "3.5.8",
-    "direflow-scripts": "3.5.8"
+    "direflow-component": "/home/primamateria/dev/direflow/packages/direflow-component",
+    "direflow-scripts": "/home/primamateria/dev/direflow/packages/direflow-scripts"
   },
   "devDependencies": {
     {{#if eslint}}
