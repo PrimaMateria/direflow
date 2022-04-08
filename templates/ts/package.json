@@ -63,8 +63,8 @@
     "tslint": "5.20.0",
     {{/if}}
     "typescript": "^4.0.0",
-    "webpack-cli": "^4.9.2"
-    "ts-loader": "^8.0.0",
+    "webpack-cli": "^4.9.2",
+    "ts-loader": "^8.0.0"
   },
   "eslintConfig": {
     "extends": "react-app"
