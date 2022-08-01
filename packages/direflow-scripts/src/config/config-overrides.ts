@@ -3,7 +3,7 @@ import FilterWarningsPlugin from "webpack-filter-warnings-plugin";
 import { EnvironmentPlugin } from "webpack";
 import rimraf from "rimraf";
 import fs from "fs";
-import { resolve } from "path";
+import { resolve, format } from "path";
 import { PromiseTask } from "event-hooks-webpack-plugin/lib/tasks";
 import entryResolver from "../helpers/entryResolver";
 import {
@@ -20,8 +20,9 @@ import IDireflowConfig from "../types/DireflowConfig";
 
 export = function override(config: TConfig, env: string, options?: IOptions) {
   const originalEntry = [config.entry].flat() as string[];
+  console.log(format({ dir: "src", base: "index" }));
   const pathIndex = originalEntry.find(
-    entry => entry && entry.includes("src/index")
+    entry => entry && entry.includes(format({ dir: "src", base: "index" }))
   );
 
   if (!pathIndex) {
