@@ -20,7 +20,6 @@ import IDireflowConfig from "../types/DireflowConfig";
 
 export = function override(config: TConfig, env: string, options?: IOptions) {
   const originalEntry = [config.entry].flat() as string[];
-  console.log(format({ dir: "src", base: "index" }));
   const pathIndex = originalEntry.find(
     entry => entry && entry.includes(format({ dir: "src", base: "index" }))
   );
