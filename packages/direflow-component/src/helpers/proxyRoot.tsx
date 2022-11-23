@@ -27,7 +27,7 @@ const createProxyComponent = (options: IComponentOptions) => {
       || options.webComponent.attachShadow({ mode: options.mode });
 
     options.shadowChildren.forEach((child) => {
-      shadowedRoot.appendChild(child);
+      shadowedRoot.prepend(child);
     });
 
     return <Portal targetElement={shadowedRoot}>{props.children}</Portal>;
