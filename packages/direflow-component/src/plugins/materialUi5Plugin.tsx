@@ -27,7 +27,8 @@ const materialUi5Plugin: PluginRegistrator = (
         muiCache = createCache({
           key: seed,
           prepend: true,
-          container: insertionPoint
+          container: insertionPoint,
+          speedy: false
         });
 
         muiCacheCache.set(element, muiCache);
