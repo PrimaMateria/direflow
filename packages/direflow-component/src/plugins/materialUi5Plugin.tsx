@@ -16,7 +16,7 @@ const materialUi5Plugin: PluginRegistrator = (
       const { CacheProvider } = require("@emotion/react");
       const { StyledEngineProvider } = require("@mui/material");
 
-      const seed = `${element.tagName.toLowerCase()}`;
+      const seed = `${element.tagName.toLowerCase()}`.replace(/[^a-z-]/g, '');
       const insertionPoint = document.createElement("span");
       insertionPoint.id = "direflow_material-ui-styles";
 
@@ -43,7 +43,7 @@ const materialUi5Plugin: PluginRegistrator = (
       ];
     } catch (err) {
       console.error(
-        "Could not load Material-UI. Did you remember to install @mui/material, @emotion/cache and @emotion/react?"
+        err, "Could not load Material-UI. Did you remember to install @mui/material, @emotion/cache and @emotion/react?"
       );
     }
   }

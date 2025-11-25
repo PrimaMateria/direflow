@@ -3,6 +3,7 @@
   "version": "3.5.16",
   "description": "Create Web Components using React",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "Silind Software",
   "license": "MIT",
   "scripts": {
